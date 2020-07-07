@@ -16,7 +16,7 @@ public class ApiController {
     @Autowired
     ApiService apiService;
 
-    @RequestMapping(method = RequestMethod.POST,value = "/zgjm")
+    @RequestMapping("/zgjm")
     public ResponseWrapper zgjm(@RequestParam("word") String word){
         String msg = apiService.getMessage(word);
         return ResponseWrapper.success(msg);
