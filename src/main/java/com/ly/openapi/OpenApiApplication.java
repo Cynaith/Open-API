@@ -12,7 +12,7 @@ public class OpenApiApplication extends SpringBootServletInitializer {
         SpringApplication.run(OpenApiApplication.class, args);
     }
 
-    @Override//为了打包springboot项目
+    @Override//为了打包springboot项目 
     protected SpringApplicationBuilder configure(
             SpringApplicationBuilder builder) {
         return builder.sources(this.getClass());
